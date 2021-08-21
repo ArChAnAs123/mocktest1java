@@ -83,10 +83,10 @@ public abstract class Animals implements Comparable<Fish>{
 		   String val= ducklist.get(i).toString();
 		   listduck.add(val);
 		   
-		   Collections.sort(listduck);
+		
 		
 		 }
-		 }   System.out.println("Sorted duck list: " + listduck );
+		 }   listduck.stream().sorted().forEach(System.out::println);
 		
 	   
  
